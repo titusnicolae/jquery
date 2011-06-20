@@ -8,23 +8,25 @@
       { border: 1px solid black;
         padding: 2px;
       }
+      .bold
+      { font-weight: bold;
+      }
     </style>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(document).ready(function()
-      { $("body > div").addClass("bordered");
+      { $('div[style]').addClass("bold");
       });
     </script>
   </head>
   <body>
-    <div>First paragraph
+    <div style="color:green">First paragraph
     </div>
-    <div>Second paragraph
+    <div style="color:blue">Second paragraph
     </div>
-    <div>Third paragraph
+    <div style="color:purple">Third paragraph
     </div>
     <div>Fourth paragraph
-      <div>Inner fourth paragraph</div>
     </div>
   </body>
 </html>
