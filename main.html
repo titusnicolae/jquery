@@ -15,20 +15,15 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(document).ready(function()
-      { $('div:has(div)').addClass("bold");
+      { $("#b").click(function()
+        { alert("|"+$.trim($("#fuckthis").val())+"|");
+          alert("|"+$("#fuckthis").val()+"|"); 
+        });
       });
     </script>
   </head>
   <body>
-    <div style="color:green">First paragraph
-    </div>
-    <div style="color:blue">Second paragraph
-    </div>
-    <div style="color:purple">Third paragraph
-    </div>
-    <div>Fourth paragraph
-      <div>Internal paragraph
-      </div>
-    </div>
+    <input type="text" id="fuckthis"></input>
+    <button type="button" id="b">press</button>
   </body>
 </html>
