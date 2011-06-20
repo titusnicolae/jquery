@@ -4,22 +4,27 @@
       .red
       { color:red;
       }
+      .bordered
+      { border: 1px solid black;
+        padding: 2px;
+      }
     </style>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(document).ready(function()
-      { $("p:nth-child(3)").addClass("red");
+      { $("body > div").addClass("bordered");
       });
     </script>
   </head>
   <body>
-    <p>First paragraph
-    </p>
-    <p>Second paragraph
-    </p>
-    <p>Third paragraph
-    </p>
-    <p>Fourth paragraph
-    </p>
+    <div>First paragraph
+    </div>
+    <div>Second paragraph
+    </div>
+    <div>Third paragraph
+    </div>
+    <div>Fourth paragraph
+      <div>Inner fourth paragraph</div>
+    </div>
   </body>
 </html>
