@@ -14,17 +14,14 @@
     </style>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
-      $(test);
-      function test()
-      { $("#b").click(function()
-        { alert("|"+$.trim($("#fuckthis").val())+"|");
-          alert("|"+$("#fuckthis").val()+"|"); 
+      $(document).ready(function()
+      { $("#it").click(function()
+        { $("<span>You pressed the button</span>").insertAfter("#it");
         });
-      }
+      });
     </script>
   </head>
   <body>
-    <input type="text" id="fuckthis"></input>
-    <button type="button" id="b">press</button>
+    <button type="button" id="it">Press Me!</button>
   </body>
 </html>
