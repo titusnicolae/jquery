@@ -5,15 +5,17 @@
     <script type="text/javascript">
       $(function()
       { 
-        $("li:has(a)").addClass("bordered");
+        $("p:even").addClass("red"); 
+        $("p:odd").addClass("bordered"); 
+        $("p:first").addClass("blue"); 
+        $("p:last-child").addClass("green");
       });
     </script>
   </head>
   <body>
-    <ul>
-      <li style="red">primul</li>
-      <li>al doilea</li>
-      <li><a href="">al treilea</a></li>
-    </ul>
+    <p>AnA</p>
+    <p>ArE</p>
+    <p>MerE</p>
+    <p>si pere</p>
   </body>
 </html>
