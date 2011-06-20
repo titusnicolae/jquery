@@ -14,20 +14,21 @@
       .invisible
       { visibility: hidden;  
       }
+      .link
+      { text-decoration: none;
+      }
     </style>
+
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { $("body > span.someth").addClass("bordered");
+      { $("a[href^='http://']").addClass("red");
+        $("a").addClass("link");
       });
     </script>
   </head>
   <body>
-    <span class="someth">
-      Hello
-      <span class="someth">
-      world
-      </span>
-    </span>
+    <a href="http://www.google.ro">google</a>
+    <a href="www.yahoo.com">yahoo</a>
   </body>
 </html>
