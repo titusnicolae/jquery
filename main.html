@@ -17,16 +17,17 @@
     </style>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
-      $(document).ready(function()
-      { $("#it").click(function()
-        { $("#text").removeClass("invisible");
-        });
+      $(function()
+      { $("body > span.someth").addClass("bordered");
       });
     </script>
   </head>
   <body>
-    <button type="button" id="it">Press Me!</button>
-    <span id="text" class="invisible">some text</span>
-    <span>some other text</span>
+    <span class="someth">
+      Hello
+      <span class="someth">
+      world
+      </span>
+    </span>
   </body>
 </html>
