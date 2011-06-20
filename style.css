@@ -1,0 +1,20 @@
+.red
+{ color:red;
+}
+.bordered
+{ border: 1px solid red;
+  padding: 2px;
+}
+.bold
+{ font-weight: bold;
+}
+.invisible
+{ visibility: hidden;
+}
+.link
+{ text-decoration: none;
+}
+.nobullet
+{ list-style: none;
+}
+

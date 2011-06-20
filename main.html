@@ -1,35 +1,19 @@
 <html>
   <head>
-    <style>
-      .red
-      { color:red;
-      }
-      .bordered
-      { border: 1px solid red;
-        padding: 2px;
-      }
-      .bold
-      { font-weight: bold;
-      }
-      .invisible
-      { visibility: hidden;  
-      }
-      .link
-      { text-decoration: none;
-      }
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { $("[title*=money]").addClass("bordered"); 
+      { 
+        $("li:has(a)").addClass("bordered");
       });
     </script>
   </head>
   <body>
-    <div title="something about money and some more">money</div>
-    <div title="cash">cash</div>
-    <div title="no money">money</div>
-    <p title="a title with money$$">money in text</p>
+    <ul>
+      <li style="red">primul</li>
+      <li>al doilea</li>
+      <li><a href="">al treilea</a></li>
+    </ul>
   </body>
 </html>
