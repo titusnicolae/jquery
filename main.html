@@ -22,12 +22,14 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { $("a[href$=pdf]").addClass("bordered"); 
+      { $("[title*=money]").addClass("bordered"); 
       });
     </script>
   </head>
   <body>
-    <a href="document.doc">descarca doc</a>
-    <a href="document.pdf">descarca pdf</a>
+    <div title="something about money and some more">money</div>
+    <div title="cash">cash</div>
+    <div title="no money">money</div>
+    <p title="a title with money$$">money in text</p>
   </body>
 </html>
