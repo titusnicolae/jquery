@@ -11,17 +11,22 @@
       .bold
       { font-weight: bold;
       }
+      .invisible
+      { visibility: hidden;  
+      }
     </style>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(document).ready(function()
       { $("#it").click(function()
-        { $("<span>You pressed the button</span>").insertAfter("#it");
+        { $("#text").removeClass("invisible");
         });
       });
     </script>
   </head>
   <body>
     <button type="button" id="it">Press Me!</button>
+    <span id="text" class="invisible">some text</span>
+    <span>some other text</span>
   </body>
 </html>
