@@ -5,7 +5,7 @@
       { color:red;
       }
       .bordered
-      { border: 1px solid black;
+      { border: 1px solid red;
         padding: 2px;
       }
       .bold
@@ -22,13 +22,12 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { $("a[href^='http://']").addClass("red");
-        $("a").addClass("link");
+      { $("input[type=password]").addClass("bordered"); 
       });
     </script>
   </head>
   <body>
-    <a href="http://www.google.ro">google</a>
-    <a href="www.yahoo.com">yahoo</a>
+    <input type="text"></input>
+    <input type="password"></input>
   </body>
 </html>
