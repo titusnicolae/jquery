@@ -7,30 +7,24 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { 
-        $("li:nth-child(2n+1)").addClass("bordered"); 
+      { $("#show").html(countOptions());
+        $("input").click(function()
+        { $("#show").html(countOptions());
+        });
       });
+      function countOptions()
+      { return "there are " +$("input:checkbox:checked").size()+" options selected"; 
+      }
     </script>
   </head>
   <body>
-    <ul>
-      <li>Ana</li>
-      <li>are</li>
-      <li>mere</li>
-      <li>Ana</li>
-      <li>are</li>
-      <li>mere</li>
-      <li>Ana</li>
-      <li>are</li>
-      <li>mere</li>
-      <li>Ana</li>
-      <li>are</li>
-      <li>mere</li>
-    </ul>
-    <ul>
-      <li>si</li>
-      <li>ce</li>
-      <li>daca</li>
-    </ul>
+    <form>
+      <input type="checkbox" name="sex">Male</input>
+      <input type="checkbox" name="sex">Female</input>
+      <input type="checkbox" name="sex" checked="checked">Bi</input>
+      <input type="checkbox" name="sex" checked="checked">Tri</input>
+      <input type="checkbox" name="sex">Quad</input>
+    </form>
+    <p id="show"></p>
   </body>
 </html>
