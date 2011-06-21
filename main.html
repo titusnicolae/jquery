@@ -8,12 +8,13 @@
     <script type="text/javascript">
       $(function()
       { 
-        $("h1").addClass("red").add("p").addClass("bordered"); 
+        $("p").not("[title*=re]").addClass("red"); 
       });
     </script>
   </head>
   <body>
-    <h1>heading 1</h1>
-    <p>paragraph 1</p> 
+    <p title="ana">ana</p>
+    <p title="are">are</p>
+    <p title="mere">mere</p>
   </body>
 </html>
