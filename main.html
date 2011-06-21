@@ -7,16 +7,17 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { 
-        alert($("p").nextAll().size());
+      { var v="ana"; 
+        $('p').each(function(n){
+          this.innerHTML=v; 
+          v+=" ana"
+        });
       });
     </script>
   </head>
   <body>
-    <p>qwe</p>
-    <p>wer</p>
-    <p>ert</p>
-    <p>rty</p>
-    <p>tyu</p>
+    <p>ana</p>
+    <p>are</p>
+    <p>mere</p>
   </body>
 </html>
