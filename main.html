@@ -7,14 +7,25 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { 
-        $("p").not("[title*=re]").addClass("red"); 
+      { $("td").addClass("bordered");
+        $("td").filter(
+          function()
+          {return this.innerHTML.match(/^\d+$/)}
+        ).addClass("red");
       });
     </script>
   </head>
   <body>
-    <p title="ana">ana</p>
-    <p title="are">are</p>
-    <p title="mere">mere</p>
+    <table> 
+      <tr>
+        <td>ana</td>
+        <td>are</td>
+        <td>12</td>
+        <td>mere</td>
+        <td>si</td>
+        <td>11</td>
+        <td>pere</td>
+      </tr> 
+    </table>
   </body>
 </html>
