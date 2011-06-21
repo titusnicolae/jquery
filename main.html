@@ -7,10 +7,11 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { $("td").addClass("bordered");
+      { 
+        $("td").addClass("bordered");
         $("td").filter(
           function()
-          {return this.innerHTML.match(/^\d+$/)}
+          {return this.innerHTML.match(/^\d+(\.\d+)?$/)}
         ).addClass("red");
       });
     </script>
@@ -20,8 +21,8 @@
       <tr>
         <td>ana</td>
         <td>are</td>
-        <td>12</td>
-        <td>mere</td>
+        <td>16.08</td>
+        <td>kg mere</td>
         <td>si</td>
         <td>11</td>
         <td>pere</td>
