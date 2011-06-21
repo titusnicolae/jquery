@@ -7,22 +7,17 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { $("td").slice(3).addClass("bordered");
-        $("td").slice(0,3).addClass("red");
+      { //$("body > div").addClass("bordered"); 
+        $("body > div").children().addClass("bordered"); 
       });
     </script>
   </head>
   <body>
-    <table> 
-      <tr>
-        <td>ana</td>
-        <td>are</td>
-        <td>16.08</td>
-        <td>kg mere</td>
-        <td>si</td>
-        <td>11</td>
-        <td>pere</td>
-      </tr> 
-    </table>
+    <div>
+      Ana are mere
+      <div>
+        Si pere
+      </div>
+    </div>
   </body>
 </html>
