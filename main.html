@@ -7,14 +7,25 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { var element=$('[name=nume]')[0];
-        element.addEventListener('click',function(event){
-          alert("m-a apasat");
+      { $('#a').addClass("bordered");
+        $('#b').addClass("bordered");
+        //change from bubble to capture false->true 
+        $('#a')[0].addEventListener('click',function(event){
+          alert("a bubble");
         },false);
+
+        $('#a')[0].addEventListener('click',function(event){
+          alert("a capture");
+        },true);
       });
     </script>
   </head>
   <body>
-    <input type="button" name="nume" value="one"/>
+    <div id="a">
+      asdasdsa
+      <div id="b">
+      fffffffffff
+      </div>
+    </div>
   </body>
 </html>
