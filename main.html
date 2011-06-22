@@ -8,16 +8,16 @@
     <script type="text/javascript">
       $(function()
       { $("form").submit(function(){
-           alert($("input[name=nume]").val());
-           alert($("input[name=prenume]").val());
+          alert($('[name=nume]:checked').val());
         }); 
       });
     </script>
   </head>
   <body>
     <form>
-      <input type="text" name="nume"/>
-      <input type="text" name="prenume"/>
+      <input type="radio" name="nume" value="one"/>
+      <input type="radio" name="nume" value="two"/>
+      <input type="radio" name="nume" value="three"/>
       <input type="submit" value="post"/>
     </form>
   </body>
