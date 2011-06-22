@@ -7,16 +7,14 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { $('[name=nume]').val(['two']);
+      { var element=$('[name=nume]')[0];
+        element.addEventListener('click',function(event){
+          alert("m-a apasat");
+        },false);
       });
     </script>
   </head>
   <body>
-    <form>
-      <input type="radio" name="nume" value="one"/>
-      <input type="radio" name="nume" value="two"/>
-      <input type="radio" name="nume" value="three"/>
-      <input type="submit" value="post"/>
-    </form>
+    <input type="button" name="nume" value="one"/>
   </body>
 </html>
