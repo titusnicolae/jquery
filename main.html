@@ -7,11 +7,18 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
       $(function()
-      { $("p").after("<h1>asd</h1>").remove();
+      { $("form").submit(function(){
+           alert($("input[name=nume]").val());
+           alert($("input[name=prenume]").val());
+        }); 
       });
     </script>
   </head>
   <body>
-    <p>ana</p>
+    <form>
+      <input type="text" name="nume"/>
+      <input type="text" name="prenume"/>
+      <input type="submit" value="post"/>
+    </form>
   </body>
 </html>
